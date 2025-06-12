@@ -39,5 +39,61 @@ body::before { /* pseudo element to create a blurry overlay */
     border-radius: 18px;
     backdrop-filter: blur(100px);
     padding: 20px;
+}
+
+/* Input area */
+.input-container {
+    position: relative; /* child el can be positioned relative to this container */
+    margin-bottom: 25px;
+}
+
+.city-input {
+    width: 100%; 
+    padding: 10px 16px;
+    border-radius: 99px;
+    border: 3px solid transparent; /* will change on :focus */
+    background: rgb(0,0,0,0.15);
+    outline: none;
+    font-weight: 500;
+    transition: 0.25s border;
+    padding-right: 45px;
+}
+
+.city-input:focus {
+    border: 3px solid rgba(84, 62, 91, 0.352);
+}
+
+.city-input::placeholder{
+    color: rgba(214, 186, 186, 0.868)
+}
+
+.search-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    display:flex;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.25s;
     
 }
+
+.search-btn:hover {
+    opacity: 1;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
