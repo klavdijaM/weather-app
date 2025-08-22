@@ -92,21 +92,45 @@ body::before { /* pseudo element to create a blurry overlay */
 /* weather info section */
 .weather-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* makes the direct children of .weather-info stack in a column*/
     gap: 25px;
 }
 
 .location-date-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* flex direction row by default */
+    justify-content: space-between; /* distribution along the main axis - here horizontal (flex direction: row) */
+    align-items: center; /* distribution along the cross axis - here vertical */
 }
 
 .location {
     display: flex; 
     align-items: center;
-    gap: 6px;
+    gap: 6px; /* spacing between flex items - here horizontal (flex direction) */
 }
+
+.weather-summary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-summary-img {
+    width: 120px;
+    height: 120px;
+}
+
+.weather-summary-info {
+    flex: 1 1 auto; /* flex-grow, flex-shrink, flex-basis */
+    min-width: 0; /* allows shrinking of content if needed */
+    text-align: end;
+}
+
+.condition-text {
+    white-space: normal; /* allows spaces and multiple lines */
+    overflow-wrap: anywhere;
+}
+
+
 
 
     
