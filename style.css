@@ -130,6 +130,18 @@ body::before { /* pseudo element to create a blurry overlay */
     overflow-wrap: anywhere;
 }
 
+.weather-condition-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.condition-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    
+}
+
 
 
 
