@@ -138,9 +138,34 @@ body::before { /* pseudo element to create a blurry overlay */
 .condition-info {
     display: flex;
     align-items: center;
-    gap: 6px;
-    
+    gap: 6px;    
 }
+
+.condition-info span {
+    font-size: 30px;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 15px;
+}
+
+.forecast-item-container{
+    min-width: 70px;
+    background: rgb(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    align-items: center;
+}
+
+.forecast-item-img {
+    width: 35 px;
+    height: 35px;
+}
+
 
 
 
