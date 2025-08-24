@@ -148,17 +148,38 @@ body::before { /* pseudo element to create a blurry overlay */
 .forecast-container {
     display: flex;
     gap: 15px;
+    overflow-x: scroll; /* creates a scrollbar - only horizontaly scrollable */
+    padding-bottom: 13px;
+}
+
+.forecast-container::-webkit-scrollbar { /* makes it possible to customize the scrollbar */
+    height: 8px;
+}
+
+.forecast-container::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0, 0.1);
+    border-radius: 99px;
+}
+
+.forecast-container::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0, 0.15);
+    border-radius: 99px;
 }
 
 .forecast-item-container{
     min-width: 70px;
     background: rgb(255, 255, 255, 0.1);
     border-radius: 12px;
+    transition: 0.3s background;
     display: flex;
     flex-direction: column;
     gap: 6px;
     padding: 10px;
     align-items: center;
+}
+
+.forecast-item-container:hover {
+    background: rgb(255, 255, 255, 0.15);
 }
 
 .forecast-item-img {
