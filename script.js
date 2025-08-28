@@ -5,9 +5,10 @@ searchBtn.addEventListener('click', () => {
     if(cityInput.value.trim() != '') {
         console.log(cityInput.value)
         cityInput.value = ''
-        
-
-
+        cityInput.blur()
     }
+})
 
+cityInput.addEventListener('keydown', (e) => {
+    console.log(e)
 })
