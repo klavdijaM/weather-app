@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 </head>
@@ -86,11 +87,19 @@
             </div>
         </section>
 
-        <section class="search-city">
-            <img src="assets/search-city.png" alt="Search City" class="search-city-img">
+        <section class="search-city section-message">
+            <img src="assets/search-city.png" alt="Search City">
             <div>
                 <h1>Search City</h1>
                 <h4>Learn about weather conditions of any city</h4>
+            </div>
+        </section>
+
+        <section class="not-found section-message" style="display: none">
+            <img src="assets/not-found.png" alt="Not found">
+            <div>
+                <h1>Not Found</h1>
+                <h4>The city you are looking for could not be found</h4>
             </div>
         </section>
 

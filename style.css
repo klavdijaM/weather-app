@@ -189,13 +189,13 @@ body::before { /* pseudo element to create a blurry overlay */
 /* weather info section END */
 
 /* search city section */
-.search-city-img {
+.section-message img {
     max-width: 100%; /* the image can't be wider than its parent */
     height: auto; /* keep the natural shape of the image */
     max-height: 200px; /* if the height is taller then 200px the whole image shrinks, with the correct aspect ratio */
 }
 
-.search-city {
+.section-message {
     display: flex;
     flex-direction: column;
     align-items: center;
